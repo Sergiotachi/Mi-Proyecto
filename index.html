@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <h1> Curso Javascript</h1>
+    
+    <h2>JavaScript</h2>
+
+<p>Curso de Javascript, prueba 1</p>
+
+<button type="button" onclick="myFunction()">Pulsa aquí</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<p>Prueva 2</p>
+<p id="demo3"></p>
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Java 1";
+  document.getElementById("demo2").innerHTML = "Java 2";
+}
+var Nombre = "Sergio";
+var Apellido = "Martin";
+document.getElementById("demo3").innerHTML = Nombre +  Apellido;
+</script>
+<h2> Redeclaraion de una variable usando var</h2>
+<p id = "demo4"></p>
+ <script>
+     var x =10;
+     {
+         var x = 2;
+     }
+document.getElementById("demo4").innerHTML = x;     
+ </script>   
+ <h3> Const Variable que no se puede repetir</h3>
+ <p id ="demo5"></p>
+ <script>
+     try {
+         const PI = 3.141592653589193;
+         PI = 3.14;
+     }
+     catch (err) {
+         document.getElementById("demo5").innerHTML = err;
+     }
+ </script>
+
+ <h2>Javascript Funciones</h2>
+
+ <p> En el ejemplo llama a una función que realiza una cálculo y devuelce el resultado</p>
+
+ <p id="demo6"></p>
+
+ <script>
+     function myFunction (p1, p2) {
+         return p1 * p2;
+     }
+     document.getElementById("demo6").innerHTML = myFuncion (4,3);
+ </script>
+ <h2>Métodos de cadena</h2>
+ <p> El metodo slice extrae una parte de una cadena y devuelve las partes extraidas en una nueva cadena</p>
+ <p id="demo7"></p>
+ <script>
+     let srt = "manzana, platano, kiwi";
+     document.getElementById("demo7").innerHTML = srt.slice(9,16)
+     /*tambien se puede utilizar substring, pero no acepta indices negativos*/
+ </script>
+
+<h2> Metodos string</h2>
+<p> El ejemplo reemplaza "Css" por "Javascript</p>
+<button onclick="myFunction()">Pulsa</button>
+<p id="8">Visita nuestra página Css</p>
+<script>
+    function myFunction() {
+    let tex = document.getElementById("demo8").innerHTML; 
+    document.getElementById("demo8").innerHTML = test.replace("Css","Javascript");
+    }
+</script>
+
+
+
+</body>
+</html>
